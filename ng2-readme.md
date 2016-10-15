@@ -2,4 +2,4 @@
 
 [svmeal-app](https://github.com/m4r1ku/svmeal-app)
 
-demo link follows
+[svmeal-app Demo](https://svmeal-app.firebaseapp.com)
