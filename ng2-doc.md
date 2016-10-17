@@ -1,5 +1,7 @@
 # Angular 2 für Einsteiger
 
+[TOC]
+
 ## Einleitung
 
 ### Ziel und Zweck
@@ -521,13 +523,102 @@ Es ist auch möglich mit dem `@Input` Decorator Inputvariablen festzulegen. Dies
 
 ## HTTP
 
+Um echte Daten in Angular 2 zu brauchen, muss man früher oder später sich mit einem Server verbinden und mit diesem die erforderlichen Daten austauschen.
+
+In den meisten Fällen hat man eine REST-API als Backend, mit welcher man kommuniziert. Wie das Backend genau gebaut ist spielt für Angular keine Rolle, man muss nur wissen welche Endpoints, also Ansprechstellen, in der API existieren und was sie für Daten liefern bzw. erfordern.
+
+Da die Kommunikation über HTTP/S läuft hat man alle die bekannten HTTP-Methoden wie **GET**, **POST**, **PUT**, **PATCH** und **DELETE** zur Verfügung.
+
+Um die oben genannten Methoden zu nutzen gibt es die `Http` Klasse in `@angular/http`.
+Diese Klasse bietet für alle Methoden eine eigene gleichnamige Funktion, welche immer eine `url` als Parameter braucht und teilweise noch einen `RequestBody` (nur bei post, put und patch). Es besteht auch immer die Möglichkeit `RequestOptions` hinzuzufügen, dies ist immer der letzte Parameter der jeweiligen Funktion.
+
+Alle Funktionen geben ein Observable vom Typ `Response` (`Observable<Response>`) zurück, welches dann an beliebigen Orten weiterverarbeitet werden kann.
+Das verwendete Observable ist eine leicht angepasste Version von dem RxJS Observable.
+
+Mehr zu RxJS gibt es am Ende dieses Kapitels. In den Beispielen werden schon RxJS spezifische Dinge gebraucht daher empfiehlt es sich sich zuerst das **RxJS** Kapitel anzuschauen.
+
+Alle Zugriffe auf einen Server werden in Services abgehandlet.
+
+In den unteren Beispiel wird ein HeroService verwendet, welcher in einer Component des gleichen Moduls injiziert werden kann. Natürlich muss der Service als Provider im NgModule registriert werden.
+
 ### GET
 
-### POST
+Mit GET werden Daten vom Server geholt.
 
-### PUT
+```typescript
+  private heroesUrl = '/heroes';  // URL to web api
+
+  constructor(private http: Http) { }
+
+  getHeroes(): Observable<Hero[]> {
+    return this.http.get(this.heroesUrl)
+               .map(response => response.json().data as Hero[]);
+  }
+```
+
+In der Methode `getHeroes` wird ein Observable vom Type Hero[] zurückgegeben, wir können danach in einer beliebigen Component diesem Observable "subscriben" und somit die Daten, welche in im `data` Objekt der Response sind, entgegennehmen.
+
+```typescript
+@Component({
+  selector: 'heroes'
+  template `
+		<div *ngFor="let hero of heroes">
+			{{ hero.name }}
+		<div>
+	`
+})
+export class HeroComponent implements OnInit {
+  private heroes: Hero[];
+  
+  constructor(private heroService: HeroService) {}
+  	
+  ngOnInit() {
+    this.heroes = this.heroService.getHeroes()
+    	.subscribe(data => this.heroes = data);
+  }
+}
+```
+
+Sobald das Observable die Daten vom Server bekommen hat werden die Heroes in die Component lokale Variable gespeichert und die  Daten in der View werden automatisch aktualisiert.
+
+### POST, PUT, PATCH
+
+POST und PUT wird dafür gebraucht auf dem Server neue Ressourcen anzulegen oder bereits bestehende zu verändern. Hingegen wird mit PATCH nur ein Teil einer Ressource aktualisiert.
+
+Jedoch sind alle drei Methoden in Angular 2 sehr ähnlich und werden hier zusammengefasst.
+
+```typescript
+private heroesUrl = '/hero';  // URL to web api
+
+  constructor(private http: Http) { }
+
+  updateHero(hero: Hero): Observable<Hero[]> {
+    let body = JSON.stringify(hero);
+    let headers = new Headers({ 'Content-Type': 'application/json' });
+	let options = new RequestOptions({ headers: headers }):
+
+    return this.http.post(this.heroesUrl, body, options)
+               .map(response => response.json());
+  }
+```
+
+Jetzt kann genau gleich wie bei GET in der Component dem Observable subscribed werden und die Rückgabe des Servers entsprechend bearbeitet werden.
+
+Der Rückgabewert des Servers unterscheidet sich natürlicherweise je nach Implementation der REST-API und kann hier nicht generalisiert werden, jedoch ändert sich das Prinzip nicht.
+
+Wie man sieht gibt es jetzt einen zweiten und dritten Parameter, welche zum ersten der Request Body und zum zweiten die Request Headers sind.
+Der Body muss momentan noch mit `JSON.stringify` serialisiert werden, jedoch sollte dies mit einer zukünftigen Version von Angular überspringbar sein (aktuelle Version 2.1.0).
+Die Headers sind ein RequestOptions Objekt, welches als Konstruktor Parameter unter anderem ein Objekt mit dem Key `headers` entgegennimmt. Für mehr Informationen zu [Headers](https://angular.io/docs/ts/latest/api/http/index/RequestOptions-class.html) und [RequestOptions](https://angular.io/docs/ts/latest/api/http/index/Headers-class.html) einfach auf ihre Namen klicken.
 
 ### DELETE
+
+
+
+### Error Handling
+
+### Promise oder Observable
+
+### RxJS
 
 ## Routing
 
@@ -553,6 +644,7 @@ Es ist auch möglich mit dem `@Input` Decorator Inputvariablen festzulegen. Dies
 | 2    | Component    | Angular 2 Component (`@Component({})`)   |
 | 3    | view classes | Übername für Components, Directives und Pipes |
 | 4    | View         | Synonym für Template oder einfach das für den User sichtbare |
+| 5    | RxJS         | Reactive Extensions for JavaScript ([RxJS](https://github.com/Reactive-Extensions/RxJS)) |
 
 
 
