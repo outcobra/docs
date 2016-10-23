@@ -3,7 +3,7 @@
 * See the **awesome** Angular 2 documentation by [@M4R1KU](https://github.com/M4R1KU) here: [ng2-doc.md](https://github.com/outcobra/docs/blob/master/ng2-doc.md)
 * Find the codestyle for JetBrains' IntelliJ here: [config/codestyle.xml](https://github.com/outcobra/docs/blob/master/config/codestyle.xml)
 * Read the userstories here: [userstories](https://github.com/outcobra/docs/blob/master/usecase/userstory/userstories.tsv)
-* To take a look at the system-usecases pleas download the this [file](https://github.com/outcobra/docs/blob/master/usecase/system-use-case/system-use-cases.xlsx()
+* To take a look at the system-usecases pleas download the this [file](https://github.com/outcobra/docs/blob/master/usecase/system-use-case/system-use-cases.xlsx)
 
 ## Userstories
 
