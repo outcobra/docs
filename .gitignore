@@ -3,3 +3,6 @@
 .idea
 *.iml
 
+**/*.lck
+**/*.vpp.bak_*
+**/*.vux
