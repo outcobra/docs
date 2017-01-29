@@ -1,51 +1,47 @@
-Story ID;Anforderung;P;SP;User Story;Akzeptanzkriterien
-0;Grundanforderungen;;;;
-0.1;Responsive Webinterface;;-;Als Benutzer kann ich unabhängig von meinem Gerät (OS) die Applikation via Browser bedienen.;Die Applikation kann über eine Url aufgerufen werden. Die Webseite muss sowohl am PC als auch auf dem Smartphone angenehm bedienbar sein. ()
-0.2;Registrierung;;4;Als Benutzer kann ich mich beim Start der Applikation registrieren;Beim Start der Applikation wird der nicht authentifizierte User auf eine Seite weitergeleitet auf der er sich registrieren oder anmelden kann. Nachdem der User das Registrierungsformular abgesendet hat, sind seine Daten in der Datenbank gespeichert und der User ist angemeldet.
-0.3;Login;;4;Ich als Benutzer kann mich am System anmelden.;Ein User der registriert aber nicht angemeldet ist kann sich nach dem Starten der Applikation einlogen. Nach dem erfolgreichen Login wird eine Übersicht der erfassten Lektionen und Aufgaben angezeigt.
-0.4;Persistenz der Daten;;-;Ich als Benutzer habe unabhängig von Zeitpunkt und Gerät Zugang zu meinen Daten.;Diese Anfoerderung betrifft alle Akzeptanzkriterien. Die Daten müssen nach dem Logout erhalten bleiben. Es gibt jedoch keine Vorgaben für die Verfügbarkeit des Systems, da der Betrieb nicht Teil dieses Projektes ist.
-0.5;CRUD Grundsatz;;-;Ich als Benutzer kann sämtliche Daten die ich erfasse auch editieren und löschen;Diese Anfoerderung betrifft alle Akzeptanzkriterien. Jede vom User erfasste Entität muss bearbeitbar und löschbar sein
-1;Institutionen;;;;
-1.1;Institutionen erstellen;1;8;Ich als Benutzer kann eine Institution (Schule) IET-GIBB erstellen.;Die Schule IET GIBB wird in der Datenbank gespeichert
-2;Klassen;;;;
-2.1;Klassen erstellen;2;8;Ich als Benutzer kann meine Klasse erfassen und mit einer Institution verlinken;Vorbedingungen Schuljahr erfasst Die Klasse A2 wird gesepichert.
-3;Schuljahre;;;;
-3.1;Schuljahre erstellen;3;8;Ich als Benutzer kann einer Institution Schuljahre hinzufügen.;Das neu erstellte Schuljahr 16/17 ist in der Datenbank gespeichert.
-4;Semester;;;;
-4.1;Semester können erfasst werden;4;8;Ich als Benutzer kann das Semester erfassen und zu Schuljahren hinzufügen.;Das Semester wird gespeichert.
-5;Lehrkräfte;;;;
-5.1;Lehrkräfte erfassen;5;8;Ich als Benuter kann die Lehrkraft Max Muser erfassen;Max Muster wird in der Datenbank gespeichert
-5.2;Lehrkräfte einer Institution zuweisen;6;5;Ich als Benutzer kann beim erfassen angeben, an welcher Institution die Lehrkraft unterrichtet.;Vorbedingungen: Institution 'BMS GIBB' erfasst. Die Lehrkraft ist mit der Institution verlinkt.
-6;Stundenplan;;;;
-6.1;Fächer können erfasst werden;7;6;Ich als Benutzer kann das Fach Mathematik hinzufügen. Dieses Fach kann ich dann den Semestern “Winter 16/17” und “Sommer 17/18” zuweisen;Vorbedingungen: Semester 'Winter 16/17' und 'Sommer 17/18' erstellt Das neu erstellte Fach, welches dem Semester 'Winter 16/17' hinzugefügt wurde erscheint jetzt in der Übersicht aller Fächer des Semesters. Dem Semester wurde angegeben wie häufig die die Fächer wiederholt werden (bsp. wöchentlich, alle 2 Wochen etc.) 
-6.2;Fächer können im Stundenplan verwendet werden;8;10;Ich als Benutzer kann für das Fach Mathematik, welches ich dem Semester “Winter 16/17” hinzugefügt habe, definieren, dass es jeden Donnerstag von 10:00 Uhr an für 90 Minuten stattfindet.;Im Stundenplan erscheint jeden Donnserstag (während dem Semester  “Winter 16/17”) von 10:00 bis 11:30¨das Fach Mathematik 
-6.3;Einem Fach kann eine Lehrperson hinzugefügt werden;9;3;Dem Fach Mathematik kann ich die Lehrperson 'Max Muster' hinzufügen.;Vorbedingungen:Fach und Lehrer erfasst.Max Muster ist als Lehrkraft für das Fach Mathematik eingetragen
-7;Aufgaben;;;;
-7.1;Aufgaben können erstellt und zugewiesen werden;10;15;Ich als Benutzer kann am Fach Englisch die Aufgabe 'Student Book Page 5, Ex. 3' anhängen. Ich gebe der Aufgabe auch noch das Fälligkeitsdatum 30.12.2016 und das Erledigungsdatum 15.04.2016. Zudem trage ich für die Aufgabe einen geschätzten Aufwand von 30 Minuten ein.;Vorbedingung: Fach Englisch erfasst In der Detailansicht des Fachs Englisch wird die Aufgabe 'Student Book Page 5, Ex. 3' angezeigt.
-7.2;Aufgaben haben einen Aufwand und einen Fortschritt;11;5;Ich als Benutzer kann laufend meinen Fortschritt eintragen und Überwachen;Vorbedingung: Aufgabe erfasst Nachdem ich die hälfte der Aufgabe gelöst habe, trage ich 50% Fortschritt ein. Dieser wird grafisch dargestellt.
-7.3;Benachrichtigung bei Aufgaben-Fälligkeit;12;10;Am Erledigungsdatum (und vlt 1 Tag vor dem Fälligkeitsdatum) werde ich vom System benachrichtigt.;Vorbedingung: Eine erfasste Aufgabe erreicht ihr Fälligkeitsdatum. Der User erhält eine Benachrichtigung mit Aufgabenbschreibung, Fälligkeit, und dem verbleibenden Aufwand
-8;Tests;;;;
-8.1;Tests erfassen und Datum setzen;13;8;Ich als Benutzer kann den Test 'Mathematik Kopfrechnen' für den 27.04.2016 eintragen.;Der erfasste Test wird in der Übersicht angezeigt. 
-8.2;Lernziele für Test definieren;14;8;Ich als Benutzer kann dem Test 'Mathematik Kopfrechnen', das Lernziel 'Multiplikation bis 10x10' hinzufügen.;Vorbedingung Test erfasst In der Testansicht wird das Lernziel 'Mathematik Kopfrechnen' angezeigt
-8.3;Note zu Test hinzufügen;15;8;Ich als Benutzer kann, nachdem der Test 'Mathematik Kopfrechnen' durchgeführt wurde, diesem die Note 6, welche ich erhalten habe eintragen.;Vorbedingung: Test erfasst In der Testansicht ist die Note ersichtlich. In allen Verknüpften Notenschnitten wird eine aktualisierung vorgenommen
-8.4;Benachrichtigung bei Test- Fälligkeit;16;10;Wenn keine Aufgabe dem Test zugewiesen wurde, werde ich eine Woche vor dem Testdatum, vom System and den Test erinnert.;Für den Test am 25.10.2016 der ohne Aufgabe erfasst wurde, zeigt das System am 18.10.2016 eine Erinnerung auf allen angemeldeten Geräten an.
-9;Noten;;;;
-9.1;Prüfungsnoten können einem Fach und optional einer Prüfung zugeordnet werden;17;10;Für den Unterricht Geschichte und Politik kann ich als Benutzer die Note 'Beteiligung' erfassen ohne dafür einen Test erstellen zu müssen. Ich kann ihr zudem eine Gewichtung hinzufügen.;Die Note wird gespeichert und alle Verknüpften Notenschnitte werden korrekt aktualisiert.
-9.2;Notenschnitt aus Fächern kann berechnet werden;18;15;Ich kann mir einen Notenschnitt aus den Fächern 'Deutsch' und 'Mathematik' berechnen lassen. Diesen Fächern gebe ich die Gewichtung 1 und 2. Dann erstelle ich auch noch einen Notenschnitt aus den Fächern 'Chemie' und 'Physik' mit den Gewichtungen 1. Diese können benannt werden und bleiben gespeichert.;Für die Fachnoten Deutsch 5.0, Math 3.5, Chemie 3.25 und Physik 6.0 lauten die Auswertungen wie folgt: 'Deutsch und Mathematik': 3.67 'Physik und Chemie': 5.13
-9.3;Noten gruppieren;19;6;Der Schnitt aller Wörtlitests im Englisch gilt als eine Teilnote. Zu diesem Zweck kann ich als Benutzer Noten gruppiert werden.;Der durchschnitt der 'Wörtlitests' zählen als einfache Fachnote im Englisch. Dazu kannn eine eine Gruppierung erstellt werden.
-9.4;Streichnoten;20;6;Weil die schlechteste Note der 'Wörtlitests' im Englisch nicht für die Zeugnissnote zählt, kann ich für die Notengruppierung eine Streichnote definieren.;In der Gruppierung 'Wörtlitests' zählen nur die besten zwei Noten, die dritte kann als Streichnote definiert werden.
-9.5;Notenreporting;21;12;Ich als Benutzer kann Notenreports erstellen. Dabei kann ich angeben welcher Notenschnitt exportiert (versendet) werden soll.;Der Notenschnitt 'BM 16/17' der erstellt wurde wird am Ende des Semesters Exportiert und an den Verteiler gesendet
-10;Ferien;;;;
-10.1;Ferien erfassen;22;15;Ich als Benutzer kann meine eigenen Ferien neu erfassen oder bestehende (Klasse oder Institution [Importiert UC-8.1]) bearbeiten.;Diese Ferien werden gespeichert und die Fächer während dieser Zeit im Sundenplan nicht angezeigt.
-11;Collab-Funktionen;;;;
-11.1;User- / Rollenverwaltung;23;45;Ich als Klassenadmin kann Personen zur Klassse hinzufügen (einladen) oder entfernen.;Der Nutzer welcher eine Klasse erstellt hat, wird automatisch zum Klassenadmin ernannt. Dieser kann die Aufgabe jedoch abdelegieren. Wenn ein neuer Benutzer der Gruppe beitreten möchte, muss der Admin dies genehmigen.
-11.2;Klassenchat;24;45;Ich als Benutzer kann innerhalb der Applikation mit meiner Klasse in einem Chat diskutieren.;Ich als Benutzer kann innerhalb der Applikation mit meiner Klasse in einem Chat diskutieren. Die Verläufe werden angezeigt.
-11.3;Aufgaben & Tests teilen;25;45;Ich als Benutzer kann Aufgaben und Prüfungen mit meiner Klasse teilen.;Andere Mitglieder meiner Klasse können diese übernehmen
-12;Lehrer-Funktionen;;;;
-12.1;Noten eintragen;26;20;Ich als Lehrperson kann Prüfungen und die entsprechenden Noten für alle Schüler meiner Klasse eintragen.;Die Noten werden jeweils nur den entsprecheden Schüler angezeigt und in dessen Notenraporte eingetragen
-13;Import-Funktionen;;;;
-13.1;Angaben importieren;27;25;Ich als Benutzer kann eine Istitution für welche ein Inport zur Verfügung steht duch die Angabe von Institution, Klasse und Schuljahr Daten importieren lassen. Dazu zählen Semester, Fächer, Lehrkräfte und Stundenpläne;Die entsprechenden Daten werden in der Datenbank (User bezogen) gespeichert.
-;;;;;
-;;;;;
-;;;200;;
-;;;180;;
+﻿Story ID,Anforderung,P,SP,User Story,Akzeptanzkriterien,Implementiert,Version
+0,Grundanforderungen,,,,,,
+0.1,Responsive Webinterface,,-,Als Benutzer kann ich unabhängig von meinem Gerät (OS) die Applikation via Browser bedienen,Die Applikation kann über eine Url aufgerufen werden. Die Webseite muss sowohl am PC als auch auf dem Smartphone angenehm bedienbar sein,Ja,1.0.0
+0.2,Registrierung,,4,Als Benutzer kann ich mich beim Start der Applikation registrieren,Beim Start der Applikation wird der nicht authentifizierte User auf eine Seite weitergeleitet auf der er sich registrieren oder anmelden kann. Nachdem der User das Registrierungsformular abgesendet hat sind seine Daten in der Datenbank gespeichert und der User ist angemeldet,Ja,1.0.0
+0.3,Login,,4,Ich als Benutzer kann mich am System anmelden,Ein User der registriert aber nicht angemeldet ist kann sich nach dem Starten der Applikation einlogen. Nach dem erfolgreichen Login wird eine Übersicht der erfassten Lektionen und Aufgaben angezeigt,Teilweise,1.0.0
+0.4,Persistenz der Daten,,-,Ich als Benutzer habe unabhängig von Zeitpunkt und Gerät Zugang zu meinen Daten,Diese Anfoerderung betrifft alle Akzeptanzkriterien. Die Daten müssen nach dem Logout erhalten bleiben. Es gibt jedoch keine Vorgaben für die Verfügbarkeit des Systems da der Betrieb nicht Teil dieses Projektes ist,Ja,1.0.0
+0.5,CRUD Grundsatz,,-,Ich als Benutzer kann sämtliche Daten die ich erfasse auch editieren und löschen,Diese Anfoerderung betrifft alle Akzeptanzkriterien. Jede vom User erfasste Entität muss bearbeitbar und löschbar sein,Teilweise,1.0.0
+1,Institutionen,,,,,,
+1.1,Institutionen erstellen,1,8,Ich als Benutzer kann eine Institution (Schule) IET-GIBB erstellen,Die Schule IET GIBB wird in der Datenbank gespeichert,Ja,1.0.0
+2,Klassen,,,,,,
+2.1,Klassen erstellen,2,8,Ich als Benutzer kann meine Klasse erfassen und mit einer Institution verlinken,Vorbedingungen Schuljahr erfasst Die Klasse A2 wird gesepichert,Ja,1.0.0
+3,Schuljahre,,,,,,
+3.1,Schuljahre erstellen,3,8,Ich als Benutzer kann einer Institution Schuljahre hinzufügen,Das neu erstellte Schuljahr 16/17 ist in der Datenbank gespeichert,Ja,1.0.0
+4,Semester,,,,,,
+4.1,Semester können erfasst werden,4,8,Ich als Benutzer kann das Semester erfassen und zu Schuljahren hinzufügen,Das Semester wird gespeichert,Ja,1.0.0
+5,Lehrkräfte,,,,,,
+5.1,Lehrkräfte erfassen,5,8,Ich als Benuter kann die Lehrkraft Max Muser erfassen,Max Muster wird in der Datenbank gespeichert,,
+5.2,Lehrkräfte einer Institution zuweisen,6,5,Ich als Benutzer kann beim erfassen angeben an welcher Institution die Lehrkraft unterrichtet,Vorbedingungen: Institution 'BMS GIBB' erfasst. Die Lehrkraft ist mit der Institution verlinkt,,
+6,Stundenplan,,,,,,
+6.1,Fächer können erfasst werden,7,6,Ich als Benutzer kann das Fach Mathematik hinzufügen. Dieses Fach kann ich dann den Semestern “Winter 16/17” und “Sommer 17/18” zuweisen,Vorbedingungen: Semester 'Winter 16/17' und 'Sommer 17/18' erstellt Das neu erstellte Fach welches dem Semester 'Winter 16/17' hinzugefügt wurde erscheint jetzt in der Übersicht aller Fächer des Semesters. Dem Semester wurde angegeben wie häufig die die Fächer wiederholt werden (bsp. wöchentlich alle 2 Wochen etc.) ,Ja,1.0.0
+6.2,Fächer können im Stundenplan verwendet werden,8,0,Ich als Benutzer kann für das Fach Mathematik welches ich dem Semester “Winter 16/17” hinzugefügt habe definieren dass es jeden Donnerstag von 10:00 Uhr an für 90 Minuten stattfindet,Im Stundenplan erscheint jeden Donnserstag (während dem Semester  “Winter 16/17”) von 10:00 bis 11:30¨das Fach Mathematik ,,
+6.3,Einem Fach kann eine Lehrperson hinzugefügt werden,9,3,Dem Fach Mathematik kann ich die Lehrperson 'Max Muster' hinzufügen,Vorbedingungen:Fach und Lehrer erfasst.Max Muster ist als Lehrkraft für das Fach Mathematik eingetragen,,
+7,Aufgaben,,,,,,
+7.1,Aufgaben können erstellt und zugewiesen werden,10,15,Ich als Benutzer kann am Fach Englisch die Aufgabe 'Student Book Page 5 Ex. 3' anhängen. Ich gebe der Aufgabe auch noch das Fälligkeitsdatum 30.12.2016 und das Erledigungsdatum 15.04.2016. Zudem trage ich für die Aufgabe einen geschätzten Aufwand von 30 Minuten ein,Vorbedingung: Fach Englisch erfasst In der Detailansicht des Fachs Englisch wird die Aufgabe 'Student Book Page 5 Ex. 3' angezeigt,Ja,1.0.0
+7.2,Aufgaben haben einen Aufwand und einen Fortschritt,11,5,Ich als Benutzer kann laufend meinen Fortschritt eintragen und Überwachen,Vorbedingung: Aufgabe erfasst Nachdem ich die hälfte der Aufgabe gelöst habe trage ich 50% Fortschritt ein. Dieser wird grafisch dargestellt,Ja,1.0.0
+7.3,Benachrichtigung bei Aufgaben-Fälligkeit,12,10,Am Erledigungsdatum (und vlt 1 Tag vor dem Fälligkeitsdatum) werde ich vom System benachrichtigt,Vorbedingung: Eine erfasste Aufgabe erreicht ihr Fälligkeitsdatum. Der User erhält eine Benachrichtigung mit Aufgabenbschreibung Fälligkeit und dem verbleibenden Aufwand,,
+8,Tests,,,,,,
+8.1,Tests erfassen und Datum setzen,13,8,Ich als Benutzer kann den Test 'Mathematik Kopfrechnen' für den 27.04.2016 eintragen,Der erfasste Test wird in der Übersicht angezeigt. ,,
+8.2,Lernziele für Test definieren,14,8,Ich als Benutzer kann dem Test 'Mathematik Kopfrechnen' das Lernziel 'Multiplikation bis 10x10' hinzufügen,Vorbedingung Test erfasst In der Testansicht wird das Lernziel 'Mathematik Kopfrechnen' angezeigt,,
+8.3,Note zu Test hinzufügen,15,8,Ich als Benutzer kann nachdem der Test 'Mathematik Kopfrechnen' durchgeführt wurde diesem die Note 6 welche ich erhalten habe eintragen,Vorbedingung: Test erfasst In der Testansicht ist die Note ersichtlich. In allen Verknüpften Notenschnitten wird eine aktualisierung vorgenommen,,
+8.4,Benachrichtigung bei Test- Fälligkeit,16,10,Wenn keine Aufgabe dem Test zugewiesen wurde werde ich eine Woche vor dem Testdatum vom System and den Test erinnert,Für den Test am 25.10.2016 der ohne Aufgabe erfasst wurde zeigt das System am 18.10.2016 eine Erinnerung auf allen angemeldeten Geräten an,,
+9,Noten,,,,,,
+9.1,Prüfungsnoten können einem Fach und optional einer Prüfung zugeordnet werden,17,10,Für den Unterricht Geschichte und Politik kann ich als Benutzer die Note 'Beteiligung' erfassen ohne dafür einen Test erstellen zu müssen. Ich kann ihr zudem eine Gewichtung hinzufügen,Die Note wird gespeichert und alle Verknüpften Notenschnitte werden korrekt aktualisiert,,
+9.2,Notenschnitt aus Fächern kann berechnet werden,18,15,Ich kann mir einen Notenschnitt aus den Fächern 'Deutsch' und 'Mathematik' berechnen lassen. Diesen Fächern gebe ich die Gewichtung 1 und 2. Dann erstelle ich auch noch einen Notenschnitt aus den Fächern 'Chemie' und 'Physik' mit den Gewichtungen 1. Diese können benannt werden und bleiben gespeichert,Für die Fachnoten Deutsch 5.0 Math 3.5 Chemie 3.25 und Physik 6.0 lauten die Auswertungen wie folgt: 'Deutsch und Mathematik': 3.67 'Physik und Chemie': 5.13,,
+9.3,Noten gruppieren,19,6,Der Schnitt aller Wörtlitests im Englisch gilt als eine Teilnote. Zu diesem Zweck kann ich als Benutzer Noten gruppiert werden,Der durchschnitt der 'Wörtlitests' zählen als einfache Fachnote im Englisch. Dazu kannn eine eine Gruppierung erstellt werden,,
+9.4,Streichnoten,20,6,Weil die schlechteste Note der 'Wörtlitests' im Englisch nicht für die Zeugnissnote zählt kann ich für die Notengruppierung eine Streichnote definieren,In der Gruppierung 'Wörtlitests' zählen nur die besten zwei Noten die dritte kann als Streichnote definiert werden,,
+9.5,Notenreporting,21,12,Ich als Benutzer kann Notenreports erstellen. Dabei kann ich angeben welcher Notenschnitt exportiert (versendet) werden soll,Der Notenschnitt 'BM 16/17' der erstellt wurde wird am Ende des Semesters Exportiert und an den Verteiler gesendet,,
+10,Ferien,,,,,,
+10.1,Ferien erfassen,22,15,Ich als Benutzer kann meine eigenen Ferien neu erfassen oder bestehende (Klasse oder Institution [Importiert UC-8.1]) bearbeiten,Diese Ferien werden gespeichert und die Fächer während dieser Zeit im Sundenplan nicht angezeigt,,
+11,Collab-Funktionen,,,,,,
+11.1,User- / Rollenverwaltung,23,45,Ich als Klassenadmin kann Personen zur Klassse hinzufügen (einladen) oder entfernen,Der Nutzer welcher eine Klasse erstellt hat wird automatisch zum Klassenadmin ernannt. Dieser kann die Aufgabe jedoch abdelegieren. Wenn ein neuer Benutzer der Gruppe beitreten möchte muss der Admin dies genehmigen,,
+11.2,Klassenchat,24,45,Ich als Benutzer kann innerhalb der Applikation mit meiner Klasse in einem Chat diskutieren,Ich als Benutzer kann innerhalb der Applikation mit meiner Klasse in einem Chat diskutieren. Die Verläufe werden angezeigt,,
+11.3,Aufgaben & Tests teilen,25,45,Ich als Benutzer kann Aufgaben und Prüfungen mit meiner Klasse teilen,Andere Mitglieder meiner Klasse können diese übernehmen,,
+12,Lehrer-Funktionen,,,,,,
+12.1,Noten eintragen,26,20,Ich als Lehrperson kann Prüfungen und die entsprechenden Noten für alle Schüler meiner Klasse eintragen,Die Noten werden jeweils nur den entsprecheden Schüler angezeigt und in dessen Notenraporte eingetragen,,
+13,Import-Funktionen,,,,,,
+13.1,Angaben importieren,27,25,Ich als Benutzer kann eine Istitution für welche ein Inport zur Verfügung steht duch die Angabe von Institution Klasse und Schuljahr Daten importieren lassen. Dazu zählen Semester Fächer Lehrkräfte und Stundenpläne,Die entsprechenden Daten werden in der Datenbank (User bezogen) gespeichert,,
