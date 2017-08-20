@@ -1,7 +1,7 @@
 # Profile
 
 ## Mario
-
+Ürsprünglich habe ich mich nicht für das Programmieren interssiert, bin aber dann über einen Fachrichtungswechsel in der Ausbildung auf die Softwareentwicklung gekommen. Mittlerweile ist es für mich eine Leidenschaft geworden, welche ich jetzt in Outcobra ausleben kann. Zudem kann ich hier mein Interesse und Wissen für das UI-Design, als Leitender Frontendentwickler in die Tat umsetzen und mich speziell auf diesem Gebiet stark weiterentwicklen.
 
 
 ## Florian
