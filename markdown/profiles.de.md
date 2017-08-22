@@ -5,9 +5,11 @@
 
 
 ## Florian
-
-
+Den ersten Kontakt zur Informatik hatte ich der dritten Klasse... damals erhielt ich meinen ersten Computer.
+Da ich diesen als Nachteilsausgleich in der Schule verwenden durfte, verbrachte ich schnell viel Zeit damit.
+5 Jahre später habe ich begonnen mir selber das Programmieren bei zu bringen.
+Heute mache ich eine Ausbildung als Softwareentwickler und beschäftige mich zu Bürozeiten hauptsächlich mit der Qualitätssicherung von Softwareprodukten. Um Entwicklungstechnisch auf dem neusten Stand zu blieben, realisiere ich immer wieder kleinere Nebenprojekte.
+Outcobra ist das bisher grösste dieser "Nebenprojekte". Meine hauptaufgaben liegen hier in der Backend-Entwicklung und im Bereich Testing.
 
 ## Joel
-
 Meine erste Berührung mit der Softwareentwicklung war mit ungefähr zwölf Jahren, als ich ein Python Buch geschenkt bekommen habe. Seit dann habe ich mich verliebt und bin über C++ und PHP nun bei Java und Kotlin gelandet. Outcobra ist toll für mich, da ich hier moderne, spannende Technologien verwenden kann und zudem auch noch auf dem Gebiet der Systemtechnik wirken kann.
