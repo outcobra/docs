@@ -41,3 +41,28 @@ Falls du noch Fragen zu unseren Features hast dann kontaktiere uns bitte auf uns
 #Technologien
 Damit es uns möglich war Outcobra aufzubauen mussten wir uns auf viele verschiedenen Frameworks und Softwarebibliotheken stützen.
 Du findest hier eine Auflistung von den von uns verwendeten Technologien. Dazu gehören Programmiersprachen, Frameworks, Libraries, Authentication Provider, CI/CD Software, Version Control Systeme und viele mehr.
+
+## Frontend
+![Angular](./img/angular.svg)
+![TypeScript](./img/typescript.svg)
+![Karma](./img/karma.svg)
+![Jasmine](./img/jasmine.svg)
+
+## Backend
+![Spring Boot](./img/spring-boot.png)
+![Spring Framework](/./img/spring.png)
+![Kotlin](./img/kotlin.svg)
+![Hibernate](./img/hibernate.svg)
+![MySQL](./img/mysql.svg)
+
+## CI/CD und Hosting
+![Docker](./img/docker.svg)
+![Jenkins](./img/jenkins.svg)
+![nginx](./img/nginx.svg)
+![Upsource](./img/upsource.svg)
+
+## Authentication
+![Auth0](./img/auth0.svg)
+
+## Datensicherheit
+![Backblaze](backblaze.svg)
