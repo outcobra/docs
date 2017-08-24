@@ -1,8 +1,14 @@
-# Profile
+# Wer wir sind
+
+Wir sind ein dreier Team von jungen, leidenschaftlichen Programmierern. In Kontakt kamen wir durch unseren Arbeitsplatz, da wir alle beim Bundesamt für Informatik und Telekommunikation die Lehre als Informatiker in der Fachrichtung Applikationsentwicklung machen.
+Schon bald stehen wir vor dem Abschluss der Lehre und werden uns danach in die richtige Berufswelt hinauswagen.
+
+Unser Team profitiert von vielen verschiedenen Interessen die sich bei Outcobra wundervoll ergänzen.
 
 ## Mario
-Ursprünglich habe ich mich nicht für das Programmieren interssiert, bin aber dann über einen Fachrichtungswechsel in der Ausbildung auf die Softwareentwicklung gekommen. Mittlerweile ist es für mich eine Leidenschaft geworden, welche ich jetzt in Outcobra ausleben kann. Zudem kann ich hier mein Interesse und Wissen für das UI-Design, als Leitender Frontendentwickler in die Tat umsetzen und mich speziell auf diesem Gebiet stark weiterentwicklen.
+Try-Hard UX/UI Fanatiker, Hobbyfotograf und fast professioneller Drummer
 
+Ich bin hauptsächlich dafür verantwortlich was du von Outcobra siehst und mit was du beim Benutzen interagierst. Das UX/UI-Design fasziniert mich sehr, da es sehr abwechslungsreich ist und es immer auch noch etwas menschliches an sich hat. Mein grösstes Ziel bei Outcobra ist es für dich eine komfortable und spannende Nutzung bereitzustellen. <br> Wenn ich nicht daran bin deine Erfahrung mit unserem Produkt zu optimieren beschäftige ich mich sehr gerne mit der Fotografie. Vorallem die Astrofotographie konnte mich in letzter Zeit stark in den Bann ziehen. Dies kann ich auch mit meinem Interesse für die Astronomie perfekt kombinieren.<br> Wenn ich weder Tastatur, Maus oder Fotokamera in der Hand habe, greife ich zu meinem Vic Firth Sticks und spiele in der Musikgesellschaft Ins & Mörigen als Schlagzeuger/Perkussionist mit.
 
 ## Florian
 Den ersten Kontakt zur Informatik hatte ich der dritten Klasse... damals erhielt ich meinen ersten Computer.

@@ -12,7 +12,7 @@ Hinter Outcobra stehen drei junge Entwickler (in Ausbildung) die sich an einer n
 
 Der Name sollte zuerst nur als Projekt- und Codename dienen. Doch dann fanden wir, dass er zu uns passt… Und haben ihn behalten.
 
-##Outcobra in Zahlen
+## Outcobra in Zahlen
 
 23 557 Zeilen Code
 
@@ -49,4 +49,3 @@ Nach einem halben Jahr Projektarbeit für die Schule (im 4er Team) beschlossen w
 Idee um Idee, Semikolon um Semikolon arbeiteten wir uns im Vergangenen Jahr an den [heutigen Stand](https://www.outcobra.school/features) heran…
 
 …und freuen uns darauf, dies auch weiter zu tun!
-

@@ -1,18 +1,17 @@
 # About Outcobra
 
-##What is Outcobra?
-
+## What is Outcobra?
 Outcobra is: &quot;A school management tool from students for students.&quot;
 
 It is designed to help you to keep track of all study related things digitally and easily.
 
 Behind Outcobra stand three young developers (in apprenticeship) who wanted to face a new challenge. If you want to know more about us, you can find a short profile here.
 
-##The Name
+## The Name
 
 The name was originally used only as a code/project-name. But we became attached to it… and decided to keep it.
 
-##Outcobra in Zahlen
+## Outcobra in Zahlen
 
 23 557 lines of code
 
@@ -28,7 +27,7 @@ The name was originally used only as a code/project-name. But we became attached
 
 1 Goal
 
-##What happened so far
+## What happened so far
 
 The idea and the first concepts for our tool are originating from a project in professional school. During the school project, we knew that we would want to continue the project afterwards.
 
