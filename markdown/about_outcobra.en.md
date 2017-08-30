@@ -11,7 +11,7 @@ Behind Outcobra stand three young developers (in apprenticeship) who wanted to f
 
 The name was originally used only as a code/project-name. But we became attached to it… and decided to keep it.
 
-## Outcobra in Zahlen
+## Outcobra in numbers
 
 23 557 lines of code
 
