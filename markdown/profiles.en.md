@@ -6,15 +6,15 @@ Our team profits from the many differing interests which complement each other p
 
 ## Mario
 
-Try-Hard UX/UI fanatic, Amateur photographer und wannabe pro drummer
+Try-Hard UX/UI fanatic, Amateur photographer and wannabe pro drummer
 
 I am mostly responsible for what you see of Outcobra and with what you interact. The UX/UI-Design is very fascinating to me because it is one of the most diverse parts of an application and is still human after all.
 
 My main goal for Outcobra is to create an exciting and comfortable experience for you.
 
-When I am not busy enhancing your experience with Outcobra, I am most likely challenging myself with photography. Lately I could really get me excited about astrophotography. I still have to learn a lot but I am quite proud of my latest results. The astrophotography FML wi chani ds schribbe.
+When I am not busy enhancing your experience with Outcobra, I am most likely challenging myself with photography. Lately I could really get me excited about astrophotography. I still have to learn a lot, but I am quite proud of my latest results. The astrophotography FML wi chani ds schribbe.
 
-If I am neither holding a mouse nor my camera, I grab my Vic Firth Sticks and take a seat behind a drumset. I am also one of four Drummers/Percussionists of the Harmonic Wind Band Ins&Mörigen
+If I am neither holding a mouse nor my camera, I grab my Vic Firth Sticks and take a seat behind a drum set. I am also one of four Drummers/Percussionists of the Harmonic Wind Band Ins&Mörigen
 
 
 
@@ -26,10 +26,10 @@ Thanks to the fact that I could use it in school, because of my physical disabil
 
 Five years later I began to teach programming myself.
 
-Today I am in an apprenticeship as software developer with main focus on Quality Assurance. To be up to date with the current trends in development I realise many side projects.
+Today I am in an apprenticeship as software developer with a focus on Quality Assurance. To be up to date with the current trends in development I realize many side projects.
 Outcobra is to date my biggest one. I mainly focus on backend development and testing.
 
-What fascinates me about the project is the challenge of many known and unknown things which confront me everytime.
+What fascinates me about the project is the challenge of many known and unknown things which confront me every time.
 
 ## Joel
 
